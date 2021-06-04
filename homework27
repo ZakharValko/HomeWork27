@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "Enter first coefficient:"
+read a
+echo "Enter second coefficient:"
+read b
+echo "Enter third coefficient"
+read c
+(( discriminant=(b*b)-4*a*c ))
+
+if [[ $discriminant -eq 0 ]]
+then
+mkdir first
+fi
+
+if [[ $discriminant -gt 0 ]]
+then
+mkdir first
+mkdir second
+fi
